@@ -42,6 +42,4 @@ class RegionTest < ActiveSupport::TestCase
 		@region.save
 		assert_equal mixed_case_code.downcase, @region.reload.code
 	end
-
-
 end

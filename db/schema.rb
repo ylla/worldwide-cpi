@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150801042123) do
+ActiveRecord::Schema.define(version: 20150805112929) do
+
+  create_table "price_indices", force: :cascade do |t|
+    t.date     "year"
+    t.float    "value"
+    t.integer  "region_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "price_indices", ["region_id", "year"], name: "index_price_indices_on_region_id_and_year"
+  add_index "price_indices", ["region_id"], name: "index_price_indices_on_region_id"
 
   create_table "regions", force: :cascade do |t|
     t.string   "name"
