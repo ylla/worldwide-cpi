@@ -8,6 +8,6 @@ class CreatePriceIndices < ActiveRecord::Migration
       t.timestamps null: false
     end
     add_foreign_key :price_indices, :regions
-    add_index :price_indices, [:region_id, :year]
+    add_index :price_indices, [:region_id, :year], unique: true
   end
 end
