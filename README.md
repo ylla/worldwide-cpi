@@ -1,7 +1,7 @@
 # Worldwide Consumer Price Index
 The intent of this application is to build a CPI converter for worldwide use, where comparisons on CPI can be made between different nations.
 
-# Consumer Price Index (accodring to Wikipedia)
+# Consumer Price Index (according to Wikipedia)
 A consumer price index (CPI) measures changes in the price level of a market basket of consumer goods and services purchased by households.
 
 ## Measure of inflation
