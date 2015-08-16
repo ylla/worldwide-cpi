@@ -28,4 +28,3 @@ task :import_worldbank, [:file] => :environment do |t, args|
 	end
 	puts "#{PriceIndex.count} records loaded"
 end
->>>>>>> file-parser

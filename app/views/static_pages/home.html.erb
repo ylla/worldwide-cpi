@@ -1,6 +1,22 @@
+<div class="narrow">
+	<div class="center jumbotron">
+		<h1>Global Consumer Price Index</h1>
+      <form class="form-calculate">
 
-<h1>CPI Worldwide</h1>
-<p>Welcome to the Worldwide Consumer Price Index.</p>
-<p>Here you'll shortly be able to compare amounts between different years and currencies.</p>
+				<p>Shortly you will be able to compare amounts between different years and currencies.</p>
 
-<p>Please check back later.</p>
+				<p>Under construction. Please check back later.</p>
+        <label for="inputRegion" class="sr-only">Region</label>
+        <input type="text" id="inputRegion" class="form-control" placeholder="Sweden" required autofocus>
+        <label for="inputAmount" class="sr-only">Amount</label>
+        <input type="float" id="inputAmount" class="form-control" placeholder="100" required>
+        
+        <label for="year1" class="sr-only">Year 1</label>
+        <input type="dateyear" id="year1" class="form-control" placeholder="2015" required>
+        <label for="year2" class="sr-only">Year 2</label>
+        <input type="dateyear" id="year2" class="form-control" placeholder="1960" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Calculate</button>
+      </form>
+	</div>
+</div>
